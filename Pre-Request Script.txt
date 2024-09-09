@@ -1,0 +1,8 @@
+// Generate a random number between 1 and 500
+function generateRandomNumber(min, max) {
+	return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// Set the random number to a variable
+const randomNumber = generateRandomNumber(1, 500);
+pm.variables.set("randomNumber", randomNumber);	
